@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: jenkins-slave
-    image: 827461279864.dkr.ecr.sa-east-1.amazonaws.com/jenkins.devops:latest
+    image: 827461279864.dkr.ecr.sa-east-1.amazonaws.com/jenkins.devops:latest 
     tty: true
     imagePullPolicy: Always
     command:
