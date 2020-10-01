@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: jenkins-slave
-    image: bitnami/kubectl
+    image: jenkins/jnlp-slave:3.27-1
     tty: true
     imagePullPolicy: Always
     command:
