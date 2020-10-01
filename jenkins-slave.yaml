@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: jenkins-slave
-    image: 827461279864.dkr.ecr.sa-east-1.amazonaws.com/jenkins.devops:latest
+    image: bitnami/kubectl
     tty: true
     imagePullPolicy: Always
     command:
@@ -15,8 +15,6 @@ spec:
     volumeMounts:
     - name: dockersock
       mountPath: "/var/run/docker.sock"
-  imagePullSecrets:
-  - name: sa-east-1-ecr-registry
   volumes:
   - name: dockersock
     hostPath:
