@@ -16,7 +16,7 @@ pipeline {
             steps {
                 container('jenkins-slave'){
                     script{              
-                          sh "kubectl -n development run nginx --image=nginx"
+                          sh "kubectl -n default run nginx --image=nginx"
                     }
                 }
             }
