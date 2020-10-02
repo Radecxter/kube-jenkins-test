@@ -10,6 +10,9 @@ spec:
     image: bitnami/kubectl
     tty: true
     imagePullPolicy: Always
+    env:
+    - name: JENKINS_URL
+      value: http://localhost:8080
     command:
       - /bin/sh
     volumeMounts:
