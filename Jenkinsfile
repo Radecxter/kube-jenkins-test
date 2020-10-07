@@ -15,10 +15,8 @@ pipeline {
         stage('Config Context') {
             steps {
                 container('jenkins-slave'){
-                    script{              
-			  sh "echo 'reached'"
-                          sh "kubectl run nginx --image=nginx"
-                    }
+		    sh "echo 'reached'"
+                    sh "kubectl run nginx --image=nginx"
                 }
             }
         }
