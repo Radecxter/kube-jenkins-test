@@ -17,7 +17,7 @@ pipeline {
                 container('jenkins-slave'){
                     script{              
 			  sh "echo 'reached'"
-                          sh "kubectl -n default run nginx --image=nginx"
+                          sh "kubectl run nginx --image=nginx"
                     }
                 }
             }
