@@ -18,6 +18,8 @@ spec:
     volumeMounts:
     - name: dockersock
       mountPath: "/var/run/docker.sock"
+    securityContext:
+      runAsUser: 0
   volumes:
   - name: dockersock
     hostPath:
