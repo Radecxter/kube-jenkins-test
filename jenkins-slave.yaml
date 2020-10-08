@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: jenkins-slave
-    image: bitnami/kubectl
+    image: kube-test
     tty: true
     imagePullPolicy: Always
     env:
@@ -18,8 +18,6 @@ spec:
     volumeMounts:
     - name: dockersock
       mountPath: "/var/run/docker.sock"
-    securityContext:
-      runAsUser: 0
   volumes:
   - name: dockersock
     hostPath:
